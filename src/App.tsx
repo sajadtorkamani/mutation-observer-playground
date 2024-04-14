@@ -5,6 +5,7 @@ import Header from './components/Header.tsx'
 import AddDomNode from './pages/AddDomNode.tsx'
 import { ELEMENTS_CONTAINER_CLASS_NAME, ROUTES } from './lib/constants.ts'
 import UpdateNodeAttribute from './pages/UpdateNodeAttribute.tsx'
+import RemoveDomNode from './pages/RemoveDomNode.tsx'
 
 const App: React.FC = () => {
   return (
@@ -21,6 +22,7 @@ const App: React.FC = () => {
 
         <Routes>
           <Route path={ROUTES.addDomNode} element={<AddDomNode />} />
+          <Route path={ROUTES.removeDomNode} element={<RemoveDomNode />} />
           <Route
             path={ROUTES.updateNodeAttribute}
             element={<UpdateNodeAttribute />}

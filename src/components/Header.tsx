@@ -13,6 +13,7 @@ const Header: React.FC = () => {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
             <Nav.Link href={ROUTES.addDomNode}>Add DOM node</Nav.Link>
+            <Nav.Link href={ROUTES.removeDomNode}>Remove DOM node</Nav.Link>
             <Nav.Link href={ROUTES.updateNodeAttribute}>
               Update node attribute
             </Nav.Link>
