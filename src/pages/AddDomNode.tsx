@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import { Button } from 'react-bootstrap'
-import { ELEMENTS_CONTAINER_CLASS_NAME } from '../../lib/constants.ts'
+import { ELEMENTS_CONTAINER_CLASS_NAME } from '../lib/constants.ts'
 
 const AddDomNode: React.FC = () => {
   function handleAddNode(tag: string) {
@@ -49,6 +49,8 @@ const AddDomNode: React.FC = () => {
 
   return (
     <>
+      <h1>Add DOM node</h1>
+
       <p>
         We'll call a callback function whenever any DOM node is added to this
         page.

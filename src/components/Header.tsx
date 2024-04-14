@@ -1,6 +1,7 @@
 import Container from 'react-bootstrap/Container'
 import Nav from 'react-bootstrap/Nav'
 import Navbar from 'react-bootstrap/Navbar'
+import { ROUTES } from '../lib/constants.ts'
 
 const Header: React.FC = () => {
   return (
@@ -11,7 +12,10 @@ const Header: React.FC = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
-            <Nav.Link href="#home">Add DOM node</Nav.Link>
+            <Nav.Link href={ROUTES.addDomNode}>Add DOM node</Nav.Link>
+            <Nav.Link href={ROUTES.updateNodeAttribute}>
+              Update node attribute
+            </Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
