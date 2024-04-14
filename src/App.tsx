@@ -10,10 +10,7 @@ const App: React.FC = () => {
     <>
       <Header />
 
-      <Container
-        className="page-wrapper mx-auto mt-2 mb-5 py-5"
-        // style={{ maxWidth: '500px' }}
-      >
+      <Container className="page-wrapper mx-auto mt-2 mb-5 py-5">
         <Routes>
           <Route path="/add-dom-node" element={<AddDomNode />} />
           <Route path="*" element={<AddDomNode />} />
