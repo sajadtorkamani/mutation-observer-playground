@@ -12,7 +12,7 @@ const App: React.FC = () => {
     <>
       <Header />
 
-      <Container className="page-wrapper mx-auto mt-2 mb-5 py-5">
+      <Container className="page-wrapper mx-auto pb-5 pt-4">
         <Alert variant="warning" style={{ maxWidth: '500px' }}>
           <Container>
             IMPORTANT: Open your browser's console to see the logs.
