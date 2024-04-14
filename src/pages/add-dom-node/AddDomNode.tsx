@@ -34,8 +34,8 @@ const AddDomNode: React.FC = () => {
 
     // 3. Configure observer
     const config: MutationObserverInit = {
-      childList: true,
-      subtree: true, // Observe the entire subtree to catch additions anywhere in the DOM tree
+      childList: true, // Observe changes to child nodes
+      subtree: true, // Observe the entire subtree in addition to the child nodes
     }
 
     // 4. Start observing
