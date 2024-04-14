@@ -14,7 +14,9 @@ const App: React.FC = () => {
 
       <Container className="page-wrapper mx-auto mt-2 mb-5 py-5">
         <Alert variant="warning" style={{ maxWidth: '400px' }}>
-          <Container>Open your browser's console to see the logs.</Container>
+          <Container>
+            IMPORTANT: Open your browser's console to see the logs.
+          </Container>
         </Alert>
 
         <Routes>
