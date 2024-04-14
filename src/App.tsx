@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container } from 'react-bootstrap'
+import { Alert, Container } from 'react-bootstrap'
 import { Route, Routes } from 'react-router-dom'
 import Header from './components/Header.tsx'
 import AddDomNode from './pages/AddDomNode.tsx'
@@ -12,6 +12,13 @@ const App: React.FC = () => {
       <Header />
 
       <Container className="page-wrapper mx-auto mt-2 mb-5 py-5">
+        <Alert
+          variant="warning"
+          className="text-sm position-fixed bottom-0 start-0 end-0 text-center m-0"
+        >
+          <Container>Open you browser's console to see the logs.</Container>
+        </Alert>
+
         <Routes>
           <Route path={ROUTES.addDomNode} element={<AddDomNode />} />
           <Route
